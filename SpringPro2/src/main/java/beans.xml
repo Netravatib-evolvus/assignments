@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:c="http://www.springframework.org/schema/c"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean id="emp1" class="com.evolvus.SpringPro1.Employee">
+        <constructor-arg name="name" value="Netra"></constructor-arg>
+        <constructor-arg name="phones">
+        <list>
+        <value>12345678</value>
+         <value>82345678</value>
+         <value>765432</value>
+        <value>9999999</value>   
+        </list>
+        </constructor-arg>
+        <constructor-arg name="address">
+        <set>
+        <value>Bangalore</value>
+        <value>Karnatak</value>
+        <value>Mangalore</value>
+         <value>Dakshinkannad</value>    
+        </set> 
+        </constructor-arg>
+       <constructor-arg name="course">
+       <map>
+       <entry key="cs" value="01"></entry>
+        <entry key="Is" value="02"></entry>
+        <entry key="ec" value="03"></entry>
+        <entry key="ee" value="04"></entry>
+       </map>
+         </constructor-arg> 
+        
+        
+        
+        </bean>
+        
+        
+        
+</beans>        
